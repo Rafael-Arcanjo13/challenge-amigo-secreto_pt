@@ -134,6 +134,23 @@ ul {
     margin: 20px 0;
 }
 
+.li-name {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-clear {
+    padding: 0.2rem;
+    border: none;
+    background: none;
+    box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+}
+
 .result-list {
     margin-top: 15px;
     color: #05DF05;
