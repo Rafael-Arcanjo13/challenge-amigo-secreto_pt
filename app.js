@@ -41,5 +41,16 @@ document.addEventListener('click', (e) => {
 
 
 function sortearAmigo() {
-    console.log(names)
+    if(names.length > 0) {
+        const max = names.length;
+        const numberRandom = Math.floor(Math.random() * max) + 1;
+        const element = names[numberRandom - 1];
+        exibirResultado(element);
+    } else {
+        exibirResultado('Adicione nomes a lista.');
+    }
+}
+
+function exibirResultado(element) {
+    ress.innerHTML = element;
 }
