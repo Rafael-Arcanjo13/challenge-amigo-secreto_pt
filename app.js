@@ -22,6 +22,7 @@ btn.addEventListener('click', () => {
     li.innerHTML += input.value;
     names.push(input.value);
     input.value = "";
+    input.focus();
 });
 
 document.addEventListener('click', (e) => {
