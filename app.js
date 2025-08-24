@@ -11,6 +11,7 @@ const addNameList = () => {
   const buttonClear = document.createElement("button");
   const iconClear = document.createElement("i");
 
+  if (input.value === '') return;
   li.classList.add("li-name");
   iconClear.classList.add("fa-solid", "fa-trash", "icon-clear");
   buttonClear.setAttribute("class", "btn-clear");
