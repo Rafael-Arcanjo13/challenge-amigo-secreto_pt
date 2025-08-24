@@ -29,6 +29,10 @@ document.addEventListener('click', (e) => {
     if(el.classList.contains('icon-clear')) {
         const btnAtual = el.parentElement;
         btnAtual.parentElement.remove();
+        const contentList = btnAtual.parentElement.textContent;
+        const indice = names.indexOf(contentList);
+        names.splice(indice, 1);
+        console.log(names);
     }
 })
 
