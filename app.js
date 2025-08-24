@@ -21,6 +21,7 @@ btn.addEventListener('click', () => {
     
     li.innerHTML += input.value;
     names.push(input.value);
+    input.value = "";
 });
 
 document.addEventListener('click', (e) => {
